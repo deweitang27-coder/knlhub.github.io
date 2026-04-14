@@ -1,0 +1,100 @@
+.sidebar {
+  background: linear-gradient(180deg, #111827 0%, #0a0e17 100%) !important;
+  border-right: 1px solid rgba(0, 212, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  position: relative;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+  animation: logoGlow 3s ease-in-out infinite;
+}
+
+@keyframes logoGlow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.logo-icon {
+  font-size: 28px;
+  color: #00d4ff;
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.6));
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00d4ff 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sidebar-menu {
+  background: transparent !important;
+  border-right: none !important;
+  padding: 16px 8px;
+}
+
+.sidebar-menu .ant-menu-item {
+  margin: 8px 0;
+  padding-left: 20px !important;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu .ant-menu-item:hover {
+  color: #00d4ff;
+  background: rgba(0, 212, 255, 0.1) !important;
+}
+
+.sidebar-menu .ant-menu-item-selected {
+  color: #00d4ff !important;
+  background: rgba(0, 212, 255, 0.15) !important;
+  position: relative;
+}
+
+.sidebar-menu .ant-menu-item-selected::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 24px;
+  background: linear-gradient(180deg, #00d4ff, #a855f7);
+  border-radius: 0 4px 4px 0;
+}
+
+.sidebar-menu .ant-menu-item .anticon {
+  font-size: 18px;
+}
+
+.sidebar-glow {
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}

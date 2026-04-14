@@ -1,0 +1,118 @@
+/* 登录页面样式 */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #111827 0%, #1a2235 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    z-index: 0;
+}
+
+.login-form {
+    width: 400px;
+    padding: 40px;
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00d4ff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.login-form .ant-form-item {
+    margin-bottom: 20px;
+}
+
+.login-form .ant-form-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.login-form .ant-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 8px;
+}
+
+.login-form .ant-input:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.2);
+}
+
+.login-form .ant-btn-primary {
+    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.login-form .ant-btn-primary:hover {
+    background: linear-gradient(135deg, #00b3e6 0%, #0077aa 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+}
+
+.login-form .ant-btn-primary:active {
+    transform: translateY(0);
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.login-logo svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.login-logo h1 {
+    color: #00d4ff;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 480px) {
+    .login-form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .login-logo h1 {
+        font-size: 24px;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+}

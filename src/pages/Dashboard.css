@@ -1,0 +1,218 @@
+.dashboard {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  background: linear-gradient(135deg, #fff 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 8px 0 0;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #1a2235 0%, #111827 100%) !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+  border-radius: 16px !important;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.2);
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+}
+
+.stat-card-1::before { background: linear-gradient(90deg, transparent, #00d4ff, transparent); }
+.stat-card-2::before { background: linear-gradient(90deg, transparent, #a855f7, transparent); }
+.stat-card-3::before { background: linear-gradient(90deg, transparent, #10b981, transparent); }
+.stat-card-4::before { background: linear-gradient(90deg, transparent, #f59e0b, transparent); }
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.stat-card-1 .stat-icon {
+  background: rgba(0, 212, 255, 0.15);
+  color: #00d4ff;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.stat-card-2 .stat-icon {
+  background: rgba(168, 85, 247, 0.15);
+  color: #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.stat-card-3 .stat-icon {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.stat-card-4 .stat-icon {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.stat-card .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.stat-card .ant-statistic-content-value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.stat-trend {
+  font-size: 14px;
+  color: #10b981;
+  margin-left: 8px;
+}
+
+.stat-card .ant-progress {
+  margin-top: 12px;
+}
+
+.chart-card {
+  background: linear-gradient(135deg, #1a2235 0%, #111827 100%) !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+  border-radius: 16px !important;
+}
+
+.chart-card .ant-card-head {
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  color: #fff;
+}
+
+.chart-card .ant-card-head-title {
+  color: #fff;
+}
+
+.pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legend-label {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.legend-value {
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+.model-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.model-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.model-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(0, 212, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00d4ff;
+  font-size: 18px;
+}
+
+.model-info {
+  flex: 1;
+}
+
+.model-name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.model-desc {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+
+.model-bar {
+  width: 120px;
+}
+
+.hot-docs-table .ant-table {
+  background: transparent !important;
+}
+
+.hot-docs-table .ant-table-thead > tr > th {
+  background: rgba(0, 212, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.hot-docs-table .ant-table-tbody > tr > td {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.hot-docs-table .ant-table-tbody > tr:hover > td {
+  background: rgba(0, 212, 255, 0.05) !important;
+}

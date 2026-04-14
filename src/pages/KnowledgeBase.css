@@ -1,0 +1,148 @@
+.knowledge-base {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.kb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  color: #fff !important;
+  margin-bottom: 4px !important;
+}
+
+.upload-btn {
+  background: linear-gradient(135deg, #00d4ff, #a855f7) !important;
+  border: none !important;
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4) !important;
+}
+
+.kb-stats-card {
+  background: linear-gradient(135deg, #1a2235 0%, #111827 100%) !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+  border-radius: 16px !important;
+  margin-bottom: 20px;
+}
+
+.kb-stats-card .ant-card-body {
+  padding: 20px;
+}
+
+.kb-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.kb-stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.kb-stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.kb-stat-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.kb-content-card {
+  background: linear-gradient(135deg, #1a2235 0%, #111827 100%) !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+  border-radius: 16px !important;
+}
+
+.kb-toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.kb-search {
+  flex: 1;
+  max-width: 300px;
+}
+
+.kb-filter, .kb-sort {
+  width: 140px;
+}
+
+.kb-table .ant-table {
+  background: transparent !important;
+}
+
+.kb-table .ant-table-thead > tr > th {
+  background: rgba(0, 212, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.kb-table .ant-table-tbody > tr > td {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.kb-table .ant-table-tbody > tr:hover > td {
+  background: rgba(0, 212, 255, 0.05) !important;
+}
+
+.doc-title-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.doc-icon {
+  font-size: 24px;
+}
+
+.doc-title {
+  display: block;
+  color: #fff !important;
+}
+
+.doc-format {
+  display: block;
+  font-size: 12px;
+}
+
+.upload-modal .ant-modal-content {
+  background: #1a2235 !important;
+  border: 1px solid rgba(0, 212, 255, 0.3) !important;
+}
+
+.upload-modal .ant-modal-header {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.upload-modal .ant-modal-title {
+  color: #fff !important;
+}
+
+.upload-modal .ant-upload-drag {
+  background: rgba(0, 212, 255, 0.05) !important;
+  border: 2px dashed rgba(0, 212, 255, 0.3) !important;
+}
+
+.upload-modal .ant-upload-drag:hover {
+  border-color: #00d4ff !important;
+}

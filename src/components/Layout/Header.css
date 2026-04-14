@@ -1,0 +1,97 @@
+.header {
+  background: linear-gradient(90deg, #111827 0%, #1a2235 100%) !important;
+  padding: 0 24px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.5), transparent);
+}
+
+.header-left {
+  flex: 1;
+  max-width: 480px;
+}
+
+.search-input {
+  background: rgba(0, 212, 255, 0.05) !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+  border-radius: 8px !important;
+  height: 40px;
+}
+
+.search-input input {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.search-input input::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.search-input .ant-input-prefix {
+  color: rgba(0, 212, 255, 0.6);
+}
+
+.search-input:hover,
+.search-input:focus {
+  border-color: rgba(0, 212, 255, 0.5) !important;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.2) !important;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icon {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.header-icon:hover {
+  color: #00d4ff;
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.notification-badge .ant-badge-count {
+  background: linear-gradient(135deg, #00d4ff, #a855f7);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.5);
+}
+
+.user-info {
+  cursor: pointer;
+  padding: 4px 12px 4px 4px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.user-info:hover {
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.user-avatar {
+  background: linear-gradient(135deg, #00d4ff, #a855f7);
+  border: 2px solid rgba(0, 212, 255, 0.5);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.3);
+}
+
+.user-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}

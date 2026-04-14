@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #0a0e17;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color-primary: #00d4ff;
+  --color-secondary: #a855f7;
+  --color-bg-base: #0a0e17;
+  --color-bg-container: #111827;
+}
+
+.ant-layout {
+  background: transparent !important;
+}
+
+.ant-card {
+  background: linear-gradient(135deg, #1a2235 0%, #111827 100%) !important;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  background: rgba(0, 212, 255, 0.05) !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+.ant-input::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.ant-select-dropdown,
+.ant-picker-dropdown {
+  background: #1a2235 !important;
+}
+
+.ant-select-item {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-select-item-option-selected {
+  background: rgba(0, 212, 255, 0.2) !important;
+}
+
+.ant-select-item-option-active {
+  background: rgba(0, 212, 255, 0.1) !important;
+}
+
+.ant-table {
+  background: transparent !important;
+}
+
+.ant-table-thead > tr > th {
+  background: rgba(0, 212, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.ant-table-tbody > tr > td {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: rgba(0, 212, 255, 0.05) !important;
+}
+
+.ant-modal-content {
+  background: #1a2235 !important;
+  border: 1px solid rgba(0, 212, 255, 0.3) !important;
+}
+
+.ant-modal-header {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.ant-modal-title {
+  color: #fff !important;
+}
+
+.ant-form-item-label > label {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-tag {
+  border-radius: 6px;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(135deg, #00d4ff, #a855f7) !important;
+  border: none !important;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #00d4ff, #9333ea) !important;
+}
+
+.ant-dropdown-menu {
+  background: #1a2235 !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.ant-dropdown-menu-item {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-dropdown-menu-item:hover {
+  background: rgba(0, 212, 255, 0.1) !important;
+}
+
+.ant-tabs-tab {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #00d4ff !important;
+}
+
+.ant-tabs-ink-bar {
+  background: linear-gradient(90deg, #00d4ff, #a855f7) !important;
+}
+
+.ant-pagination-item {
+  background: rgba(0, 212, 255, 0.05) !important;
+  border-color: rgba(0, 212, 255, 0.2) !important;
+}
+
+.ant-pagination-item a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-pagination-item-active {
+  background: rgba(0, 212, 255, 0.2) !important;
+  border-color: #00d4ff !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

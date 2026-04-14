@@ -1,0 +1,160 @@
+.user-management {
+  animation: fadeIn 0.5s ease;
+}
+
+.um-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  color: #fff !important;
+  margin-bottom: 4px !important;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #00d4ff, #a855f7) !important;
+  border: none !important;
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4) !important;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #1a2235 0%, #111827 100%) !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+  border-radius: 16px !important;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px !important;
+}
+
+.stat-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.users-card {
+  background: linear-gradient(135deg, #1a2235 0%, #111827 100%) !important;
+  border: 1px solid rgba(0, 212, 255, 0.2) !important;
+  border-radius: 16px !important;
+  margin-top: 20px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 300px;
+}
+
+.role-filter, .dept-filter {
+  width: 140px;
+}
+
+.users-table .ant-table {
+  background: transparent !important;
+}
+
+.users-table .ant-table-thead > tr > th {
+  background: rgba(0, 212, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.users-table .ant-table-tbody > tr > td {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.users-table .ant-table-tbody > tr:hover > td {
+  background: rgba(0, 212, 255, 0.05) !important;
+}
+
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  color: #fff !important;
+}
+
+.user-email {
+  font-size: 12px;
+}
+
+.user-modal .ant-modal-content,
+.role-modal .ant-modal-content {
+  background: #1a2235 !important;
+  border: 1px solid rgba(0, 212, 255, 0.3) !important;
+}
+
+.user-modal .ant-modal-header,
+.role-modal .ant-modal-header {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.user-modal .ant-modal-title,
+.role-modal .ant-modal-title {
+  color: #fff !important;
+}
+
+.role-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(0, 212, 255, 0.05);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.role-user-name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.permissions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.permission-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: rgba(0, 212, 255, 0.05);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}

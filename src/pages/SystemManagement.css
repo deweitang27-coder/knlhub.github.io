@@ -1,0 +1,77 @@
+/* 系统管理页面样式 */
+.system-management {
+    padding: 24px;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.system-management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.system-management-header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.system-management-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.system-management-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.system-management-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.system-management-card .card-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #1890ff;
+}
+
+.system-management-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.system-management-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .system-management-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .system-management-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
